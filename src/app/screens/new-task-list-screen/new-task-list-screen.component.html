@@ -1,0 +1,18 @@
+<div class="container text-center align-center">
+  <div class="row">
+    <div class="col-8">
+      <div class="mb-3">
+        <h3 for="exampleFormControlInput1" class="form-label">
+          Add new Task List title
+        </h3>
+        <input #taskListInput type="text" class="form-control" id="taskList" placeholder="" />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <button type="button" class="btn btn-danger m-3" routerLink="/">Cancel</button>
+      <button type="button" class="btn btn-info" (click)="addNewTaskList(taskListInput.value)">Add Task List</button>
+    </div>
+  </div>
+</div>
